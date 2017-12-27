@@ -10,6 +10,29 @@ guide : [http://aty.sdsu.edu/bibliog/latex/LaTeXtoPDF.html]
 
 
 
+
+
+[on work]: # (
+Project Structure
+.
+├── main.tex
+├── config
+|   ├── imports.tex
+|   └── syntax.tex
+├── sections
+|   ├── structure.tex
+|   ├── frontpage.tex
+|   ├── abstract.tex
+|   ├── introduction.tex
+|   ├── section1.tex
+|   ├── section2.tex
+|   ├── section2.tex
+|   ├── conclusion.tex
+|   ├── reference.tex
+|   └── appen
+)
+
+
 # GIT
 
 ## Commandos Uteis
