@@ -1,10 +1,34 @@
+%Class and Margins
+%--------------------------------------
 \documentclass[12pt,a4paper]{report}
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}
-\usepackage{fontspec}
-%\fontspec[Path=./fonts/]{NewsGotT.ttf}
+\usepackage[left=2.54cm, right=2.54cm, top=1.9cm, bottom=1.9cm]{geometry}
+%--------------------------------------
 
+%Graphics
+%--------------------------------------
+\usepackage{graphicx}
 \graphicspath{{./figures/}}
+%--------------------------------------
+
+%Encoding
+%--------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%--------------------------------------
+ 
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%--------------------------------------
+ 
+%Hyphenation rules
+%--------------------------------------
+%\usepackage{hyphenat}
+%\hyphenation{mate-mática recu-perar}
+%--------------------------------------
+
+\newcommand\HRule{\rule{\textwidth}{1pt}}
+\renewcommand*\rmdefault{ptm}
 
 \begin{document}
 
