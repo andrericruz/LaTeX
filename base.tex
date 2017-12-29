@@ -1,7 +1,7 @@
 %Class and Margins
 %--------------------------------------
-\documentclass[12pt,a4paper]{report}
-\usepackage[left=2.54cm, right=2.54cm, top=1.9cm, bottom=1.9cm]{geometry}
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
 %--------------------------------------
 
 %Graphics
@@ -27,8 +27,21 @@
 %\hyphenation{mate-mática recu-perar}
 %--------------------------------------
 
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Subject}
+\lhead{Title}
+\rfoot{\thepage}
+\lfoot{André Rios da Cruz}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
 \newcommand\HRule{\rule{\textwidth}{1pt}}
 \renewcommand*\rmdefault{ptm}
+
 
 \begin{document}
 
