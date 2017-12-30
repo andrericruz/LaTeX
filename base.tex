@@ -8,12 +8,16 @@
 %--------------------------------------
 \usepackage{graphicx}
 \graphicspath{{./figures/}}
+\usepackage{wrapfig}
+\usepackage{caption}
 %--------------------------------------
 
 %Encoding
 %--------------------------------------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
 %--------------------------------------
  
 %Portuguese-specific commands
@@ -23,18 +27,43 @@
  
 %Hyphenation rules
 %--------------------------------------
-%\usepackage{hyphenat}
-%\hyphenation{mate-mática recu-perar}
+\usepackage{hyphenat}
+\hyphenation{mate-mática recu-perar}
 %--------------------------------------
 
+%Cabeçalho e Rodapé
+%--------------------------------------
 \usepackage{fancyhdr}
- 
 \pagestyle{fancy}
+
 \fancyhf{}
-\rhead{Subject}
-\lhead{Title}
+\rhead{Document Title}
+\lhead{\rightmark}
 \rfoot{\thepage}
 \lfoot{André Rios da Cruz}
+%---------------------------------------
+
+%Cabeçalho e Rodapé
+%--------------------------------------
+%Indentar primeira linha secção
+\usepackage{indentfirst} 
+\setlength{\parindent}{2em}
+%Sem indenteção
+%\noindent
+\setlength{\parskip}{1em}
+%---------------------------------------
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftdot}{.}
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{.}
+\renewcommand{\cftsubsubsecaftersnum}{.}
+
+\addto\captionsportuguese{
+  \renewcommand{\contentsname}%
+    {Índice}%
+}
 
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
