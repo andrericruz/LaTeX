@@ -18,9 +18,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \titlelabel{\thetitle.\quad}
-
-%Espaço entre o numero e o nome da secção
-\setlength{\cftsecnumwidth}{4em}
 %--------------------------------------
  
 %Portuguese-specific commands
@@ -52,18 +49,20 @@
 %Formatação do Índice
 %--------------------------------------
 \usepackage{tocloft}
+\addto\captionsportuguese{\renewcommand{\contentsname}{Índice}}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftdot}{.}
 \renewcommand{\cftsecaftersnum}{.}
 \renewcommand{\cftsubsecaftersnum}{.}
 \renewcommand{\cftsubsubsecaftersnum}{.}
-
-\addto\captionsportuguese{
-  \renewcommand{\contentsname}%
-    {Índice}%
-}
+\renewcommand{\cftsecfont}{\normalfont\bfseries}
+\renewcommand{\cftsecpagefont}{\normalfont\bfseries}
+\renewcommand{\cftsecindent}{0pt}
+\renewcommand{\cftsubsecindent}{25pt}
+\renewcommand{\cftsubsubsecindent}{62pt}
 
 \setcounter{tocdepth}{3}
+
 %--------------------------------------
 
 %Indentações
@@ -79,7 +78,7 @@
 %Numeração dos capitulos por secções
 %---------------------------------------
 \renewcommand\thesection{\arabic{section}}
-\setcounter{secnumdepth}{4}
+\setcounter{secnumdepth}{3}
 %---------------------------------------
 
 %Limites frontpage
